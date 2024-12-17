@@ -3,7 +3,6 @@
     "name": "recetapro",
     "slug": "recetapro",
     "version": "1.0.0",
-
     "scheme": "recetapro",
     "web": {
       "bundler": "metro",
@@ -17,32 +16,46 @@
         {
           "launchMode": "most-recent"
         }
+      ],
+      [
+        "expo-font",
+        {
+          "fonts": ["node_modules/@expo-google-fonts/league-spartan/LeagueSpartan_400Regular.ttf", "node_modules/@expo-google-fonts/league-spartan/LeagueSpartan_700Bold.ttf"]
+        }
       ]
     ],
     "experiments": {
       "typedRoutes": true,
-
       "tsconfigPaths": true
     },
-
     "orientation": "portrait",
     "icon": "./assets/icon.png",
-
     "userInterfaceStyle": "light",
-
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
-    "assetBundlePatterns": ["**/*"],
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.efejuani.recetapro"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
+      },
+      "package": "com.efejuani.recetapro"
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "051137fb-b9c3-464a-9801-b3ae46635c47"
       }
     }
   }
